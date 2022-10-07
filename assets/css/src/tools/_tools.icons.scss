@@ -1,0 +1,8 @@
+@function getIconCode($iconName) {
+    @return unquote('"') + unquote(str-insert(map-get($settings-icons, $iconName), "\\", 1)) + unquote('"');
+}
+
+@mixin setIcon($iconName) {
+    font-family: getFont("icons");
+    content: getIconCode($iconName);
+}

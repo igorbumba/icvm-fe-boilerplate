@@ -1,0 +1,167 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 100%;
+    text-decoration: none;
+    background: transparent;
+    vertical-align: baseline;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+body {
+    color: black;
+    font-size: 14px;
+    line-height: 1.4;
+    background: white;
+    margin: 0 0 25mm 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+@page {
+    size: 8.5in 11in;
+}
+
+.print-only {
+    display: block !important;
+}
+
+.hidden-print,
+.pdf-only,
+.u-pdf-only,
+.u-hide-print,
+.accessibility,
+.embed-video-container,
+.c-page-actions {
+    display: none !important;
+}
+
+.o-main {
+    page-break-after: avoid;
+    page-break-before: avoid;
+}
+
+.header-print {
+    border-bottom: 1px solid #c1bfbf;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.header-print img {
+    width: 100%;
+    display: block;
+    max-width: 160px;
+}

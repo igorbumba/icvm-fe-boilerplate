@@ -1,0 +1,35 @@
+.o-footer {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 50px 0;
+    background-color: getColor('light-gray');
+
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        list-style-type: none;
+        justify-content: space-between;
+        text-align: center;
+
+        @include breakpoint(mobile) {
+            display: block;
+        }
+
+        li {
+            display: block;
+
+            @include breakpoint(mobile) {
+                padding-bottom: 10px;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

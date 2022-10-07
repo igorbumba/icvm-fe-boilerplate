@@ -1,0 +1,67 @@
+body {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+img,
+figure,
+button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+br {
+    width: 100%;
+    display: block;
+    height: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pdfOnly,
+.pdf-only,
+.u-pdf-only {
+    display: block !important;
+}
+
+.noPDF,
+.u-no-pdf,
+.u-hide-pdf,
+.pdf-hide,
+.accessibility {
+    display: none !important;
+}
+
+.pdf-header {
+    margin: 0 0 30px 0;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid #c1bfbf;
+}
+
+.pdf-header img {
+    display: block;
+    width: 160px;
+    margin: 0;
+    padding: 0;
+}

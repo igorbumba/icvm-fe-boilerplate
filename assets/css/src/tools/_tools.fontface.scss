@@ -1,0 +1,27 @@
+@mixin font-face($font-name, $font-filename: $font-name, $version: 1) {
+    @font-face {
+        font-family: "#{$font-name}";
+        src: url("#{getConfig("fonts")+$font-filename}.eot?#{$version}");
+        src: url("#{getConfig("fonts")+$font-filename}.eot?#{$version}#iefix") format("embedded-opentype"),
+            url("#{getConfig("fonts")+$font-filename}.woff2?#{$version}") format("woff2"),
+            url("#{getConfig("fonts")+$font-filename}.woff?#{$version}") format("woff"),
+            url("#{getConfig("fonts")+$font-filename}.ttf?#{$version}") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+@mixin icon-fonts($font-name, $font-filename: $font-name, $version: 1) {
+    @font-face {
+        font-family: "#{$font-name}";
+        src: url("#{getConfig("icons")+$font-filename}.eot?#{$version}");
+        src: url("#{getConfig("icons")+$font-filename}.eot?#{$version}#iefix") format("embedded-opentype"),
+            url("#{getConfig("icons")+$font-filename}.woff2?#{$version}") format("woff2"),
+            url("#{getConfig("icons")+$font-filename}.woff?#{$version}") format("woff"),
+            url("#{getConfig("icons")+$font-filename}.ttf?#{$version}") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+    }
+}

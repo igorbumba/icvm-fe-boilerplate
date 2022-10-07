@@ -1,0 +1,28 @@
+.o-header {
+    width: 100%;
+    display: block;
+    padding: 50px 0;
+    text-align: center;
+    background-color: getColor('light-gray');
+
+    @include breakpoint(tablet) {
+        padding: 35px 0;
+    }
+
+    @include breakpoint(mobile) {
+        padding: 20px 0;
+    }
+
+    &__title {
+        display: block;
+        font-weight: bold;
+        padding-bottom: 20px;
+        @include font-map('o-header__title');
+    }
+
+    &__subtitle {
+        display: block;
+        line-height: line-height(18, 22); // unitless line height
+        @include font-map('o-header__subtitle');
+    }
+}

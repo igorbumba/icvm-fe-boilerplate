@@ -1,0 +1,50 @@
+html {
+    @include font-default;
+    @include default-font-size;
+    color: getColor("black");
+    background-color: getColor("white");
+
+    &.is-locked {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
+
+    &.is-mobile-lock {
+        @include breakpoint(mobile-nav) {
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+        }
+    }
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

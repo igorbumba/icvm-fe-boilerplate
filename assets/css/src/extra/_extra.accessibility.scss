@@ -1,0 +1,14 @@
+.accessibility {
+    top: auto;
+    width: 1px;
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.accessibility:focus {
+    width: auto;
+    height: auto;
+    position: static;
+}

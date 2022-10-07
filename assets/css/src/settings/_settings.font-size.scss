@@ -1,0 +1,21 @@
+$settings-font-size: (
+    'font-size': 18,
+    'line-height': 27,
+    'default-unit': px,
+);
+
+$settings-font-map: (
+    'default': (
+        null: 18,
+    ),
+    'c-btn': (
+        null: 16,
+    ),
+    'o-header__title': (
+        null: 32,
+        mobile: 24,
+    ),
+    'o-header__subtitle': (
+        null: 16,
+    ),
+);

@@ -1,0 +1,13 @@
+@mixin font-icons() {
+    font-family: getFont('icons');
+}
+
+@mixin font-default($font-weight: 'default') {
+    font-weight: getFontWeight($font-weight);
+    font-family: getFont('default'), sans-serif;
+}
+
+@mixin font-title {
+    font-weight: 400;
+    font-family: getFont('titles'), sans-serif;
+}

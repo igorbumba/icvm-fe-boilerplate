@@ -1,0 +1,19 @@
+.o-container {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: getSizing('padding', 'default');
+    padding-left: getSizing('padding', 'default');
+    max-width: getSizing('container', 'max-width');
+
+    @include breakpoint(desktop) {
+        padding-right: getSizing('padding', 'desktop');
+        padding-left: getSizing('padding', 'desktop');
+    }
+
+    @include breakpoint(mobile) {
+        padding-right: getSizing('padding', 'mobile');
+        padding-left: getSizing('padding', 'mobile');
+    }
+}

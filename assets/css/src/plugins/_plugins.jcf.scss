@@ -1,0 +1,94 @@
+.jcf-select {
+    width: 100%;
+    display: block;
+
+    &.jcf-select-js-select-dropdown {
+        height: 50px;
+        cursor: pointer;
+        font-size: 20px;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .jcf-select-opener {
+        width: 20px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        &:after {
+            display: inline-block;
+            font-size: 12px;
+            position: relative;
+            transform: rotate(-90deg);
+            transition: getTransition();
+        }
+    }
+
+    &.jcf-drop-active .jcf-select-opener:after {
+        transform: rotate(90deg);
+    }
+}
+
+.jcf-select-drop {
+    margin-top: -1px;
+    font-size: 20px;
+    line-height: line-height(22, 30);
+    z-index: getZindex('jcf-select');
+
+    &.jcf-drop-flipped {
+        margin-top: 1px;
+    }
+
+    .jcf-list {
+        display: block;
+    }
+
+    .jcf-list-content {
+        display: block;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            display: block;
+        }
+    }
+
+    .jcf-option {
+        display: block;
+        cursor: pointer;
+        padding: 5px 10px;
+        transition: getTransition();
+    }
+}
+
+.js-select-dropdown {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+.jcf-select-text {
+    display: table-cell;
+    vertical-align: middle;
+
+    span {
+        display: block;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

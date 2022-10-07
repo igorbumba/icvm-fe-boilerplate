@@ -1,0 +1,11 @@
+.o-hero {
+    display: block;
+    text-align: left;
+    padding: 50px 0;
+
+    &__title {
+        display: block;
+        opacity: 0.5;
+        padding-bottom: 15px;
+    }
+}

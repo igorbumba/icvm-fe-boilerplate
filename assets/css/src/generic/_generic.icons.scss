@@ -1,0 +1,20 @@
+@include icon-fonts(getFont("icons"));
+
+[class^="icon-"],
+[class*=" icon-"] {
+    speak: none;
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: getFont("icons") !important;
+}
+
+@each $icon-key, $icon-value in $settings-icons {
+    .icon-#{$icon-key}:before {
+        content: getIconCode($icon-key);
+    }
+}

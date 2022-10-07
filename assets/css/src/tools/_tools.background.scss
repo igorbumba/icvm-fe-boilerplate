@@ -1,0 +1,3 @@
+@function getBgImage($imgName, $imgFolder: "../img") {
+    @return url("#{$imgFolder}/#{$imgName}");
+}

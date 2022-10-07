@@ -1,0 +1,7 @@
+@function grid($value, $columns: getConfig("gridSize")) {
+    @return percentage((1 / $columns) * $value);
+}
+
+@function gridPadding() {
+    @return getConfig("gridPadding");
+}

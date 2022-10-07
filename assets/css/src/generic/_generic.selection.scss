@@ -1,0 +1,9 @@
+::selection {
+    color: getColor("text", "selection");
+    background-color: getColor("background", "selection");
+}
+
+::-moz-selection {
+    color: getColor("text", "selection");
+    background-color: getColor("background", "selection");
+}
