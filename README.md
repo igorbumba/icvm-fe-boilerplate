@@ -19,7 +19,7 @@ npm -v
 
 ```bash
 $ cd assets/
-$ npm install
+$ yarn install
 ```
 
 ## NPM tasks
